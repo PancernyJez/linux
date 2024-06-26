@@ -1,87 +1,38 @@
 pancerny102@pancerny102-VirtualBox:~/Documents/LinuxZadanieDomowe$ cat selected.txt commands.txt 
-203 processes.txt
+217 processes.txt
 root        1091  0.0  0.5 112216 22784 ?        Ssl  20:02   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-pancern+    1141  0.1  0.3 117408 15684 ?        S<sl 20:02   0:13 /usr/bin/pipewire
+pancern+    1141  0.1  0.3 117408 15908 ?        S<sl 20:02   0:19 /usr/bin/pipewire
 pancern+    1142  0.0  0.1  97736  5760 ?        Ssl  20:02   0:00 /usr/bin/pipewire -c filter-chain.conf
-pancern+    1145  0.0  0.4 406852 18304 ?        S<sl 20:02   0:00 /usr/bin/wireplumber
-pancern+    1146  0.0  0.4 129060 19468 ?        S<sl 20:02   0:01 /usr/bin/pipewire-pulse
+pancern+    1145  0.0  0.4 406852 18304 ?        S<sl 20:02   0:01 /usr/bin/wireplumber
+pancern+    1146  0.0  0.5 129060 20060 ?        S<sl 20:02   0:02 /usr/bin/pipewire-pulse
 pancern+    1147  0.0  0.2 316508  9856 ?        SLsl 20:02   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
-pancern+    1158  0.0  0.1  11068  6656 ?        Ss   20:02   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+pancern+    1158  0.0  0.1  11068  6656 ?        Ss   20:02   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 pancern+    1179  0.0  0.1 235668  5888 tty2     Ssl+ 20:02   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-pancern+    1329  2.4 10.4 4905716 417596 ?      Rsl  20:02   3:18 /usr/bin/gnome-shell
+pancern+    1329  5.0 11.7 4965256 470828 ?      Ssl  20:02   9:44 /usr/bin/gnome-shell
 pancern+    1342  0.0  0.1   9608  4992 ?        S    20:02   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
 pancern+    1448  0.0  0.6 2523352 26468 ?       Sl   20:02   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
-pancern+    1454  0.0  0.2 388856 11900 ?        Ssl  20:02   0:04 /usr/bin/ibus-daemon --panel disable
+pancern+    1454  0.0  0.2 388856 12028 ?        Ssl  20:02   0:11 /usr/bin/ibus-daemon --panel disable
 pancern+    1825  0.0  0.2  38952 11776 ?        Ss   20:02   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
 pancern+    1911  0.0  0.7 429424 30220 ?        Sl   20:02   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
 pancern+    1939  0.0  0.6 2588884 27024 ?       Sl   20:02   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
 pancern+    2260  0.0  0.5 1836124 20408 ?       Sl   20:03   0:00 /usr/bin/snap userd
 pancern+    2886  0.0  0.6 492256 27900 ?        Sl   20:03   0:00 /usr/bin/update-notifier
-pancern+    3073  0.0  1.4 216416 58636 ?        S    20:04   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.TP4WP2 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
-   61  mkdir LinuxZadanieDomowe
-   62  cd LinuxZadanieDomowe/
-   63  touch processes.txt
-   64  ps aux
-   65  clear
-   66  ps aux > processes.txt 
-   67  less processes.txt 
-   68  more processes.txt 
-   69  cp processes.txt copy.txt
-   70  ls
-   71  more copy.txt 
-   72  ls -l
-   73  man wc
-   74  wc processes.txt 
-   75  man wc
-   76  wc -l processes.txt 
-   77  203 > selected.txt
-   78  203 < selected.txt
-   79  man rm
-   80  ls
-   81  selected.txt < 203
-   82  wc -l processes.txt > selected.txt 
-   83  more selected.txt 
-   84  man wc
-   85  man grep
-   86  grep "/bin" processes.txt 
-   87  grep "/bin" processes.txt >selected.txt 
-   88  wc -l processes.txt > selected.txt 
-   89  grep "/bin" processes.txt >> selected.txt 
-   90  history
-   91  history tail -n61
-   92  history tail -61
-   93  history tail 61'
-
-   94  history tail 61
-   95  man history
-   96  history mkdir LinuxZadanieDomowe
-   97  history tail mkdir LinuxZadanieDomowe
-   98  man tail
-   99  tail -61 history
-  100  history
-  101  history > commands.txt
-  102  tail -61 commands.txt 
-  103  tail 61 commands.txt 
-  104  tail -n61 commands.txt 
-  105  tail -n81 commands.txt 
-  106  head -n61 commands.txt 
-  107  tail -n41 commands.txt 
-  108  tail -n40 commands.txt 
-  109  tail -n42 commands.txt 
-  110  tail -n42 commands.txt > commands.txt 
-  111  more commands.txt 
-  112  less commands.txt 
-  113  tail -n42 history > commands.txt 
-  114  history
-  115  history > commands.txt 
-  116  tail -n53 commands.txt 
-  117  tail -n54 commands.txt 
-  118  tail -n52 commands.txt 
-  119  tail -n55 commands.txt 
-  120  tail -n54 commands.txt 
-  121  tail -n55 commands.txt 
-  122  tail -n56 commands.txt 
-  123  tail -n56 commands.txt < commands.txt 
-  124  commands.txt > tail -n56  commands.txt 
-  125  tail -n56 commands.txt > commands.txt 
-  126  history > commands.txt 
+pancern+    3073  0.0  1.4 216416 58764 ?        S    20:04   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.TP4WP2 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+pancern+    5749  0.2  5.5 2341704 224408 ?      Sl   22:38   0:05 /usr/bin/nautilus --gapplication-service
+pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnome-text-editor /home/pancerny102/Documents/LinuxZadanieDomowe/commands.txt
+   55  mkdir LinuxZadanieDomowe
+   56  cd LinuxZadanieDomowe/
+   57  touch processes.txt
+   58  ps aux > processes.txt 
+   59  cp processes.txt copy.txt
+   60  mkdir backup
+   61  mv copy.txt backup/
+   62  wc -l processes.txt > selected.txt
+   63  grep "/bin" processes.txt >> selected.txt 
+   64  history
+   65  history tail -9
+   66  tail history -9
+   67  history | tail -9
+   68  history | tail -12
+   69  history | tail -18
+   70  history | tail -16 > commands.txt
