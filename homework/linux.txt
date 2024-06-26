@@ -21,6 +21,27 @@ pancern+    3073  0.0  1.4 216416 58764 ?        S    20:04   0:00 /usr/bin/Xway
 pancern+    5749  0.2  5.5 2341704 224408 ?      Sl   22:38   0:05 /usr/bin/nautilus --gapplication-service
 pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnome-text-editor /home/pancerny102/Documents/LinuxZadanieDomowe/commands.txt
 20
+95:root        1091  0.0  0.5 112216 22784 ?        Ssl  20:02   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+103:pancern+    1141  0.1  0.3 117408 15908 ?        S<sl 20:02   0:19 /usr/bin/pipewire
+104:pancern+    1142  0.0  0.1  97736  5760 ?        Ssl  20:02   0:00 /usr/bin/pipewire -c filter-chain.conf
+105:pancern+    1145  0.0  0.4 406852 18304 ?        S<sl 20:02   0:01 /usr/bin/wireplumber
+106:pancern+    1146  0.0  0.5 129060 20060 ?        S<sl 20:02   0:02 /usr/bin/pipewire-pulse
+107:pancern+    1147  0.0  0.2 316508  9856 ?        SLsl 20:02   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+108:pancern+    1158  0.0  0.1  11068  6656 ?        Ss   20:02   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+111:pancern+    1179  0.0  0.1 235668  5888 tty2     Ssl+ 20:02   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+121:pancern+    1329  5.0 11.7 4965256 470828 ?      Ssl  20:02   9:44 /usr/bin/gnome-shell
+122:pancern+    1342  0.0  0.1   9608  4992 ?        S    20:02   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+127:pancern+    1448  0.0  0.6 2523352 26468 ?       Sl   20:02   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+129:pancern+    1454  0.0  0.2 388856 12028 ?        Ssl  20:02   0:11 /usr/bin/ibus-daemon --panel disable
+162:pancern+    1825  0.0  0.2  38952 11776 ?        Ss   20:02   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+164:pancern+    1911  0.0  0.7 429424 30220 ?        Sl   20:02   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+166:pancern+    1939  0.0  0.6 2588884 27024 ?       Sl   20:02   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+170:pancern+    2260  0.0  0.5 1836124 20408 ?       Sl   20:03   0:00 /usr/bin/snap userd
+172:pancern+    2886  0.0  0.6 492256 27900 ?        Sl   20:03   0:00 /usr/bin/update-notifier
+173:pancern+    3073  0.0  1.4 216416 58764 ?        S    20:04   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.TP4WP2 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+186:pancern+    5749  0.2  5.5 2341704 224408 ?      Sl   22:38   0:05 /usr/bin/nautilus --gapplication-service
+188:pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnome-text-editor /home/pancerny102/Documents/LinuxZadanieDomowe/commands.txt
+   55  mkdir LinuxZadanieDomowe
    56  cd LinuxZadanieDomowe/
    57  touch processes.txt
    58  ps aux > processes.txt 
@@ -53,3 +74,11 @@ pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnom
    85  history | tail -29 > commands.txt
    86  less commands.txt 
    87  history | tail -32 > commands.txt
+   88  less commands.txt 
+   89  cat selected.txt commands.txt 
+   90  grep -n /bin >> selected.txt 
+   91  grep -n "/bin" >> selected.txt 
+   92  grep "/bin" >> selected.txt 
+   93  grep -n "/bin" processes.txt >> selected.txt 
+   94  history
+   95  history | tail -41 > commands.txt
