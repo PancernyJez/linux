@@ -20,6 +20,7 @@ pancern+    2886  0.0  0.6 492256 27900 ?        Sl   20:03   0:00 /usr/bin/upda
 pancern+    3073  0.0  1.4 216416 58764 ?        S    20:04   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.TP4WP2 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
 pancern+    5749  0.2  5.5 2341704 224408 ?      Sl   22:38   0:05 /usr/bin/nautilus --gapplication-service
 pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnome-text-editor /home/pancerny102/Documents/LinuxZadanieDomowe/commands.txt
+20
    56  cd LinuxZadanieDomowe/
    57  touch processes.txt
    58  ps aux > processes.txt 
@@ -44,3 +45,11 @@ pancern+    5880  1.9  7.1 2357000 286340 ?      Sl   22:42   0:40 /usr/bin/gnom
    77  grep "/bin" processes.txt 
    78  history
    79  history | tail -24 > commands.txt
+   80  cat selected.txt commands.txt 
+   81  less selected.txt 
+   82  grep "/bin" processes.txt | wc -l >> selected.txt 
+   83  less selected.txt 
+   84  history
+   85  history | tail -29 > commands.txt
+   86  less commands.txt 
+   87  history | tail -32 > commands.txt
